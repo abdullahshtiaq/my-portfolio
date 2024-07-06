@@ -1,38 +1,182 @@
-.App {
-  text-align: center;
-}
+/* Tailwind base styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Custom styles */
+.intro-section {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
+  padding: 2rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.intro-content {
+  text-align: left;
+}
+
+.intro-title {
+  font-size: 5rem; /* Tailwind text-4xl */
+  font-weight: bold; /* Tailwind font-bold */
+  margin-bottom: 1rem; /* Tailwind mb-4 */
+  color:#fff;
+  
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem; /* Tailwind space-x-4 */
+}
+
+/* Custom button styles */
+button {
+  position: relative;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border-radius: 5px;
+  background: #183153;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  cursor: pointer;
+  border: none;
 }
 
-.App-link {
-  color: #61dafb;
+button:after {
+  content: " ";
+  width: 0%;
+  height: 100%;
+  background: #ffd401;
+  position: absolute;
+  transition: all 0.4s ease-in-out;
+  right: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+button:hover::after {
+  right: auto;
+  left: 0;
+  width: 100%;
+}
+
+button span {
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+  padding: 18px 25px;
+  color: #fff;
+  font-size: 1.125em;
+  font-weight: 700;
+  letter-spacing: 0.3em;
+  z-index: 20;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover span {
+  color: #183153;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
   }
-  to {
-    transform: rotate(360deg);
+
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
   }
 }
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 0;
+  width: 12rem; /* Tailwind w-48 */
+  border-radius: 0 0 5px 5px; /* Rounded bottom corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind shadow-lg */
+  z-index: 10;
+  overflow: hidden;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-item {
+  width: 100%;
+  padding: 0.5rem 1rem; /* Tailwind px-4 py-2 */
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: #edf2f7; /* Tailwind gray-200 */
+}
+
+.linkedin-btn {
+  background-color: #0077b5; /* LinkedIn blue */
+}
+
+.linkedin-btn:hover {
+  background-color: #005582; /* Darker LinkedIn blue */
+}
+
+.projects-section {
+  height: 100vh;
+  padding: 2rem; /* Tailwind p-8 */
+  background-size: cover;
+  background-position: center;
+  color:#fff
+}
+
+.projects-title {
+  font-size: 1.875rem; /* Tailwind text-3xl */
+  font-weight: bold; /* Tailwind font-bold */
+  margin-bottom: 1rem; /* Tailwind mb-4 */
+  color: #fff;
+}
+
+.project {
+  margin-bottom: 2rem; /* Tailwind mb-8 */
+}
+
+.project-title {
+  font-size: 1.5rem; /* Tailwind text-2xl */
+  font-weight: bold; /* Tailwind font-bold */
+  margin-bottom: 0.5rem; /* Tailwind mb-2 */
+}
+
+html, body, #root, canvas {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+#content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  min-height: 100%;
+  overflow-y: auto;
+  padding-top: 100vh; /* Ensures initial view is just the Three.js background */
+}
+

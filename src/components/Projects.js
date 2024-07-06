@@ -2,13 +2,20 @@ import React from 'react';
 
 const Projects = () => {
   return (
-    <section id="projects" className="p-8">
-      <h2 className="text-3xl font-bold mb-4">Projects</h2>
-      <ul>
-        <li className="mb-2">Project 1 - Description</li>
-        <li className="mb-2">Project 2 - Description</li>
-        <li className="mb-2">Project 3 - Description</li>
-      </ul>
+    <section id="projects" className="projects-section">
+      <h2 className="projects-title">Projects</h2>
+      <div id="project1" className="project">
+        <h3 className="project-title">Project 1</h3>
+        <p>Description of Project 1</p>
+      </div>
+      <div id="project2" className="project">
+        <h3 className="project-title">Project 2</h3>
+        <p>Description of Project 2</p>
+      </div>
+      <div id="project3" className="project">
+        <h3 className="project-title">Project 3</h3>
+        <p>Description of Project 3</p>
+      </div>
     </section>
   );
 };
