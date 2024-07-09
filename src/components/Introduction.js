@@ -1,17 +1,10 @@
 import React from 'react';
 
-const Introduction = () => {
-  const handleScrollToProject = (projectId) => {
-    const element = document.getElementById(projectId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
+const Introduction = ({ onProjectClick }) => {
   return (
     <section id="introduction" className="intro-section">
       <div className="intro-content">
-        <h1 className="intro-title">Hi, I'm Abdullah Ishtiaq</h1>
+        <h1 className="intro-title">Hello, I'm Abdullah Ishtiaq</h1>
         <div className="buttons">
           <a
             href="https://example.com/resume.pdf"
@@ -30,7 +23,7 @@ const Introduction = () => {
               <ul>
                 <li>
                   <button
-                    onClick={() => handleScrollToProject('project1')}
+                    onClick={() => onProjectClick('project1')}
                     className="dropdown-item"
                   >
                     Project 1
@@ -38,7 +31,7 @@ const Introduction = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => handleScrollToProject('project2')}
+                    onClick={() => onProjectClick('project2')}
                     className="dropdown-item"
                   >
                     Project 2
@@ -46,7 +39,7 @@ const Introduction = () => {
                 </li>
                 <li>
                   <button
-                    onClick={() => handleScrollToProject('project3')}
+                    onClick={() => onProjectClick('project3')}
                     className="dropdown-item"
                   >
                     Project 3
@@ -56,11 +49,11 @@ const Introduction = () => {
             </div>
           </div>
           <a
-            href="https://www.linkedin.com/in/your-linkedin-profile"
+            href="https://www.linkedin.com/in/abdullah-ishtiaq-492008218/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button>
+            <button className="linkedin-btn">
               <span>LinkedIn</span>
             </button>
           </a>

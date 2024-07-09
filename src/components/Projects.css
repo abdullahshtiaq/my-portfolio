@@ -1,0 +1,22 @@
+.projects-section {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .projects-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .projects-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  

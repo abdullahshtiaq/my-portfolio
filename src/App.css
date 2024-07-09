@@ -66,9 +66,9 @@ button span {
   text-align: center;
   text-decoration: none;
   width: 100%;
-  padding: 18px 25px;
+  padding: 15px 20px;
   color: #fff;
-  font-size: 1.125em;
+  font-size: 1.2em;
   font-weight: 700;
   letter-spacing: 0.3em;
   z-index: 20;
@@ -103,13 +103,11 @@ button:hover span {
   position: absolute;
   top: 100%;
   left: 0;
-  margin-top: 0;
-  width: 12rem; /* Tailwind w-48 */
+  width: 10.2rem; /* Adjusted width */
   border-radius: 0 0 5px 5px; /* Rounded bottom corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind shadow-lg */
   z-index: 10;
   overflow: hidden;
-  color:#fff;
 }
 
 .dropdown:hover .dropdown-content {
@@ -121,15 +119,24 @@ button:hover span {
   padding: 0.5rem 1rem; /* Tailwind px-4 py-2 */
   text-align: left;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
+  color: #fff; /* Default color */
+  z-index:2;
+  position: relative;
 }
 
 .dropdown-item:hover {
-  background-color: #edf2f7; /* Tailwind gray-200 */
+  background-color: #ffd401; /* Yellow background on item hover */
+  color: #183153; /* Darker color on item hover */
 }
 
+.dropdown:hover .dropdown-item {
+  color: #fff; /* White color when the button is hovered */
+}
+
+
 .linkedin-btn {
-  background-color: #0077b5; /* LinkedIn blue */
+  background-color: #183153; /* LinkedIn blue */
 }
 
 .linkedin-btn:hover {
@@ -178,11 +185,14 @@ html, body, #root {
   z-index: -1;
 }
 
-
 #content {
   position: relative;
   z-index: 1;
   width: 100%;
   min-height: 100%;
   overflow-y: auto;
+}
+
+.projects-section {
+  background: url('/public/project-bg.jpg') no-repeat center center/cover;
 }
