@@ -1,6 +1,10 @@
 import React from 'react';
 import './ProjectItem.css';
 
+import image1 from './image1.jpg';
+import image2 from './image2.png';
+import image3 from './image3.jpg';
+
 const ProjectItem = ({ id, title, description, imageUrl }) => {
   return (
     <div id={id} className="project-item">
