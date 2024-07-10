@@ -26,7 +26,7 @@ const Introduction = ({ onProjectClick }) => {
                     onClick={() => onProjectClick('project1')}
                     className="dropdown-item"
                   >
-                    Project 1
+                    Calgary Kiosk
                   </button>
                 </li>
                 <li>
@@ -34,7 +34,7 @@ const Introduction = ({ onProjectClick }) => {
                     onClick={() => onProjectClick('project2')}
                     className="dropdown-item"
                   >
-                    Project 2
+                    RSVP Website
                   </button>
                 </li>
                 <li>
@@ -42,14 +42,14 @@ const Introduction = ({ onProjectClick }) => {
                     onClick={() => onProjectClick('project3')}
                     className="dropdown-item"
                   >
-                    Project 3
+                    Self-checkout Station
                   </button>
                 </li>
               </ul>
             </div>
           </div>
           <a
-            href="https://www.linkedin.com/in/abdullah-ishtiaq-492008218/"
+            href="https://www.linkedin.com/in/your-linkedin-profile"
             target="_blank"
             rel="noopener noreferrer"
           >
