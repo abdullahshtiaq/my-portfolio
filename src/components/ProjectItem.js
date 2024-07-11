@@ -1,7 +1,7 @@
 import React from 'react';
 import './ProjectItem.css';
 
-const ProjectItem = ({ id, title, description, imageUrl, link }) => {
+const ProjectItem = ({ id, title, description, images, link }) => {
   return (
     <div id={id} className={`project-item ${id}`}>
       <div className="project-description">
@@ -13,8 +13,12 @@ const ProjectItem = ({ id, title, description, imageUrl, link }) => {
           </button>
         </a>
       </div>
-      <div className="project-image">
-        <img src={imageUrl} alt={title} />
+      <div className="project-images">
+        {images.map((image, index) => (
+          <div key={index} className={`project-image ${id}-image-${index}`}>
+            <img src={image} alt={`${title} screenshot ${index + 1}`} />
+          </div>
+        ))}
       </div>
     </div>
   );
