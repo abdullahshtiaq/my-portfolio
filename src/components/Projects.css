@@ -34,11 +34,11 @@
     cursor: pointer;
     transition-duration: 0.3s;
     overflow: hidden;
-    position: fixed; /* Ensure the button is fixed at the bottom */
+    position: fixed; 
     bottom: 45px;
-    left: 53%; /* Center horizontally */
+    left: 53%;
     transform: translateX(-50%);
-    z-index: 1000; /* Ensure it appears above other elements */
+    z-index: 1000; 
   }
   
   .svgIcon {
