@@ -7,7 +7,7 @@ const Introduction = ({ onProjectClick }) => {
         <h1 className="intro-title">Hello, I'm Abdullah Ishtiaq</h1>
         <div className="buttons">
           <a
-            href="https://example.com/resume.pdf"
+            href= {`${process.env.PUBLIC_URL}/Abdullah Ishtiaq Resume_38.pdf`}
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -49,7 +49,7 @@ const Introduction = ({ onProjectClick }) => {
             </div>
           </div>
           <a
-            href="https://www.linkedin.com/in/your-linkedin-profile"
+            href="https://www.linkedin.com/in/abdullah-ishtiaq-492008218/"
             target="_blank"
             rel="noopener noreferrer"
           >
