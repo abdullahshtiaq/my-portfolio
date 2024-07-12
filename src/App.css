@@ -3,7 +3,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom styles */
 .intro-section {
   height: 100vh;
   display: flex;
@@ -19,19 +18,19 @@
 }
 
 .intro-title {
-  font-size: 5rem; /* Tailwind text-4xl */
-  font-weight: bold; /* Tailwind font-bold */
-  margin-bottom: 1rem; /* Tailwind mb-4 */
+  font-size: 5rem; 
+  font-weight: bold; 
+  margin-bottom: 1rem; 
   color:#fff;
   
 }
 
 .buttons {
   display: flex;
-  gap: 1rem; /* Tailwind space-x-4 */
+  gap: 1rem; 
 }
 
-/* Custom button styles */
+
 button:not(.back-button):not(.view-all-button) {
   position: relative;
   display: flex;
@@ -103,9 +102,9 @@ button:not(.back-button):not(.view-all-button):hover span {
   position: absolute;
   top: 100%;
   left: 0;
-  width: 10.2rem; /* Adjusted width */
-  border-radius: 0 0 5px 5px; /* Rounded bottom corners */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Tailwind shadow-lg */
+  width: 10.2rem; 
+  border-radius: 0 0 5px 5px; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
   z-index: 10;
   overflow: hidden;
 }
@@ -116,56 +115,55 @@ button:not(.back-button):not(.view-all-button):hover span {
 
 .dropdown-item {
   width: 100%;
-  padding: 0.5rem 1rem; /* Tailwind px-4 py-2 */
+  padding: 0.5rem 1rem; 
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-  color: #fff; /* Default color */
+  color: #fff; 
   z-index:2;
   position: relative;
 }
 
 .dropdown-item:hover {
-  background-color: #ffd401; /* Yellow background on item hover */
-  color: #183153; /* Darker color on item hover */
+  background-color: #ffd401; 
+  color: #183153; 
 }
 
 .dropdown:hover .dropdown-item {
-  color: #fff; /* White color when the button is hovered */
+  color: #fff; 
 }
 
 
 .linkedin-btn {
-  background-color: #183153; /* LinkedIn blue */
+  background-color: #183153; 
 }
 
 .linkedin-btn:hover {
-  background-color: #005582; /* Darker LinkedIn blue */
-}
+  background-color: #005582; 
 
 .projects-section {
   height: 100vh;
-  padding: 2rem; /* Tailwind p-8 */
+  padding: 2rem; 
   background-size: cover;
   background-position: center;
   color:#fff
 }
 
 .projects-title {
-  font-size: 1.875rem; /* Tailwind text-3xl */
-  font-weight: bold; /* Tailwind font-bold */
-  margin-bottom: 1rem; /* Tailwind mb-4 */
+  font-size: 1.875rem; 
+  font-weight: bold;
+  margin-bottom: 1rem; 
   color: #fff;
 }
 
 .project {
-  margin-bottom: 2rem; /* Tailwind mb-8 */
+  margin-bottom: 2rem;
 }
 
 .project-title {
-  font-size: 1.5rem; /* Tailwind text-2xl */
-  font-weight: bold; /* Tailwind font-bold */
-  margin-bottom: 0.5rem; /* Tailwind mb-2 */
+  font-size: 1.5rem; 
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 html, body, #root {
@@ -188,7 +186,7 @@ html, body, #root {
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the video covers the entire viewport */
+  object-fit: cover; 
   z-index: -1;
 }
 
