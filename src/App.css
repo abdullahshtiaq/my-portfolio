@@ -140,6 +140,7 @@ button:not(.back-button):not(.view-all-button):hover span {
 
 .linkedin-btn:hover {
   background-color: #005582; 
+}
 
 .projects-section {
   height: 100vh;
