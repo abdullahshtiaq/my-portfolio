@@ -32,7 +32,7 @@
 }
 
 /* Custom button styles */
-button {
+button:not(.back-button):not(.view-all-button) {
   position: relative;
   display: flex;
   justify-content: center;
@@ -46,7 +46,7 @@ button {
   border: none;
 }
 
-button:after {
+button:not(.back-button):not(.view-all-button)::after {
   content: " ";
   width: 0%;
   height: 100%;
@@ -56,13 +56,13 @@ button:after {
   right: 0;
 }
 
-button:hover::after {
+button:not(.back-button):not(.view-all-button):hover::after {
   right: auto;
   left: 0;
   width: 100%;
 }
 
-button span {
+button:not(.back-button):not(.view-all-button) span {
   text-align: center;
   text-decoration: none;
   width: 100%;
@@ -75,7 +75,7 @@ button span {
   transition: all 0.3s ease-in-out;
 }
 
-button:hover span {
+button:not(.back-button):not(.view-all-button):hover span {
   color: #183153;
   animation: scaleUp 0.3s ease-in-out;
 }
@@ -204,3 +204,4 @@ html, body, #root {
   height: 100%;
   overflow: hidden;
 }
+

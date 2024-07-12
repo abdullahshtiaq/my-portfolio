@@ -30,25 +30,27 @@ const Projects = ({ projectId, onBackClick }) => {
       images: [
         image2,
         image19,
-        image13,
       ],
-      link: 'https://github.com/abdullahshtiaq/Calgary-Kiosk'
+      link: 'https://github.com/abdullahshtiaq/Calgary-Kiosk',
+      viewAllLink: `${process.env.PUBLIC_URL}/kiosk pics.pdf`,
     },
     project2: {
       id: 'project2',
       title: 'Wedding RSVP',
       description: 'This project is an RSVP website developed using HTML, CSS, JavaScript, and MongoDB. The website features a responsive and visually appealing interface created with HTML and CSS, ensuring a smooth user experience across various devices but optimized for mobile. JavaScript is used to handle dynamic interactions and form validations, providing real-time feedback to users. MongoDB serves as the backend database, storing and managing RSVP data efficiently, allowing users to easily submit and manage their event responses.',
       images: [
-        image2,
+        image3,
+        image4,
       ],
-      link: 'https://github.com/abdullahshtiaq/Walima'
+      link: 'https://github.com/abdullahshtiaq/Walima',
+      viewAllLink: `${process.env.PUBLIC_URL}/rsvp pics.pdf`,
     },
     project3: {
       id: 'project3',
       title: 'Self-checkout Station',
       description: 'This project entails the development of an efficient self-checkout system designed to simulate a thorough user experience similar to using a self-checkout station in a retail environment. The system is coded using Java, and it leverages object-oriented programming (OOP) for modular and scalable design, and JUnit testing to ensure reliability and correctness. A user-friendly graphical user interface (GUI) was crafted using Swing, while Git was utilized for effective version control and collaboration. Additionally, a hardware simulation API was integrated to mimic real-world hardware interactions like barcode scanning and payment processing, providing a realistic and seamless user experience.',
       images: [
-        image3,
+        image1,
       ],
       link: 'https://github.com/abdullahshtiaq/Self-checkout-station'
     },
@@ -58,6 +60,13 @@ const Projects = ({ projectId, onBackClick }) => {
 
   return (
     <section id={project.id} className="projects-section">
+      <button className="back-button" onClick={onBackClick}>
+        <svg className="svgIcon" viewBox="0 0 384 512">
+          <path
+            d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+          ></path>
+        </svg>
+      </button>
       <div className="projects-content">
         <ProjectItem
           id={project.id}
@@ -65,6 +74,7 @@ const Projects = ({ projectId, onBackClick }) => {
           description={project.description}
           images={project.images}
           link={project.link}
+          viewAllLink={project.viewAllLink} 
         />
       </div>
     </section>

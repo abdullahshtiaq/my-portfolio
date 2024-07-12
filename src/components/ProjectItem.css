@@ -12,7 +12,8 @@
   
   .project-description {
     flex: 1;
-    padding-right: 6rem;
+    padding-right: 5rem;
+    align-items: center;
 
   }
   
@@ -26,27 +27,41 @@
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 2rem;
+
+  }
+
+  .project-images-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+    margin-top: 2rem;
   }
   
   .project-images {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 1rem; /* Adjust gap between images */
+    gap: 3rem; /* Adjust gap between images */
   }
   
   .project-image img {
-    max-width: 300px; /* Adjust image width */
-    max-height: 200px; /* Adjust image height */
+    width: 200px;
+    height: 300px;
+    max-width: 500px; /* Adjust image width */
+    max-height: 500px; /* Adjust image height */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
 
-  .project1-image-2 img {
-
+  .project3-image-0 img {
+    width: 100%;
+    margin-left: 3rem;
+    margin-bottom: 2rem;
   }
 
-  button {
+  .github-button {
     position: relative;
     display: flex;
     justify-content: center;
@@ -58,11 +73,11 @@
     overflow: hidden;
     cursor: pointer;
     border: none;
-    margin-top: 1rem; /* Add space above the button */
-    margin-left: 10rem;
+    margin-top: 2rem; /* Add space above the button */
+    margin-left: 11rem;
   }
   
-  button:after {
+  .github-button:after {
     content: " ";
     width: 0%;
     height: 100%;
@@ -72,13 +87,13 @@
     right: 0;
   }
   
-  button:hover::after {
+  .github-button:hover::after {
     right: auto;
     left: 0;
     width: 100%;
   }
   
-  button span {
+  .github-button span {
     text-align: center;
     text-decoration: none;
     width: 100%;
@@ -91,7 +106,7 @@
     letter-spacing: 0.2em;
   }
   
-  button:hover span {
+  .github-button:hover span {
     color: #183153;
     animation: scaleUp 0.3s ease-in-out;
   }
@@ -109,13 +124,62 @@
   }
   
   .project1 button {
-    margin-left: 7rem;
+    margin-left: 10rem;
   }
   
   .project2 button {
-    margin-left:7rem
+    margin-left:9.3rem
   }
   
   .project3 button {
-    background: #0000ff; /* Example: Blue button for project 3 */
+    margin-left: 9rem;
   }
+
+  /* View all button styles */
+.view-all-button {
+  position: relative;
+  overflow: hidden;
+  height: 2.5rem;
+  padding: 0 1.5rem;
+  border-radius: 1.25rem;
+  background: #3d3a4e;
+  background-size: 400%;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 2rem; /* Add space above the button */
+}
+
+.view-all-button:hover::before {
+  transform: scaleX(1);
+}
+
+.button-content {
+  position: relative;
+  z-index: 1;
+  font-size: 1rem;
+}
+
+.view-all-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  background: linear-gradient(
+    82.3deg,
+    rgba(150, 93, 233, 1) 10.8%,
+    rgba(99, 88, 238, 1) 94.3%
+  );
+  transition: all 0.475s;
+}
+
+.view-all-button-container {
+  padding-top: 0.5rem; /* Add space above the button */
+  padding-left: 0px;
+  margin-left: 0.8rem;
+}
