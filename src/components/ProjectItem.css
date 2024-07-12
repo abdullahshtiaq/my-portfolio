@@ -4,7 +4,7 @@
     align-items: center;
     margin: 2rem 0;
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.1); /* Light background for contrast */
+    background-color: rgba(255, 255, 255, 0.1);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background: url('/public/project-bg.jpg') no-repeat center center/cover;
@@ -43,14 +43,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 3rem; /* Adjust gap between images */
+    gap: 3rem; 
   }
   
   .project-image img {
     width: 200px;
     height: 300px;
-    max-width: 500px; /* Adjust image width */
-    max-height: 500px; /* Adjust image height */
+    max-width: 500px; 
+    max-height: 500px; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   }
@@ -73,7 +73,7 @@
     overflow: hidden;
     cursor: pointer;
     border: none;
-    margin-top: 2rem; /* Add space above the button */
+    margin-top: 2rem; 
     margin-left: 11rem;
   }
   
@@ -135,7 +135,7 @@
     margin-left: 9rem;
   }
 
-  /* View all button styles */
+ 
 .view-all-button {
   position: relative;
   overflow: hidden;
@@ -147,7 +147,7 @@
   color: #fff;
   border: none;
   cursor: pointer;
-  margin-top: 2rem; /* Add space above the button */
+  margin-top: 2rem; 
 }
 
 .view-all-button:hover::before {
@@ -179,7 +179,7 @@
 }
 
 .view-all-button-container {
-  padding-top: 0.5rem; /* Add space above the button */
+  padding-top: 0.5rem; 
   padding-left: 0px;
   margin-left: 0.8rem;
 }
